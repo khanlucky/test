@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="khan" translate="label" sortOrder="10">
+            <label>Khan</label>
+        </tab>
+        <section id="test" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Admin Notification Configuration</label>
+            <tab>khan</tab>
+            <resource>Khan_Orderadmin::config_test</resource>
+            <group id="settings" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="custom_email" translate="label comment" sortOrder="0" type="text" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enter Email Id comma seperated</label>
+                    <validate>validate-email</validate>
+                </field>
+            </group>
+            <group id="settings" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="notify_time" translate="label comment" sortOrder="0" type="text" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enter Time period for notification</label>
+                    <!--<validate>validate-email</validate>-->
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
